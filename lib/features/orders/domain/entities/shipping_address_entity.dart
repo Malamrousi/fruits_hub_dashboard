@@ -14,4 +14,8 @@ class ShippingAddressEntity {
     this.city,
     this.email,
   });
+  @override
+  String toString() {
+    return '$address $floor $city';
+  }
 }

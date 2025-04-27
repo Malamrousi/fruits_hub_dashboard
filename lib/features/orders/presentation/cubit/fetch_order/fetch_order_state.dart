@@ -1,6 +1,5 @@
 part of 'fetch_order_cubit.dart';
 
-@immutable
 sealed class FetchOrderState {}
 
 final class FetchOrderInitial extends FetchOrderState {}

@@ -2,6 +2,7 @@
 import '../../features/orders/domain/entities/order_entity.dart';
 import '../../features/orders/domain/entities/order_product_entity.dart';
 import '../../features/orders/domain/entities/shipping_address_entity.dart';
+import '../enum/order_enum.dart';
 
 OrderEntity getDummyOrder() {
   // Create a sample shipping address
@@ -47,6 +48,7 @@ OrderEntity getDummyOrder() {
 
   // Create and return the OrderModel
   return OrderEntity(
+    status: OrderEnum.pending,
     totalPrice: totalPrice,
     uId: 'user123',
     shippingAddressModel: shippingAddress,

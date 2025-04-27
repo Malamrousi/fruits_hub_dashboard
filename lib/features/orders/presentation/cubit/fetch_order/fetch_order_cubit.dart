@@ -1,6 +1,5 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:furit_hub_dashbboard/features/orders/domain/repo/order_repo.dart';
-import 'package:meta/meta.dart';
 
 import '../../../domain/entities/order_entity.dart';
 

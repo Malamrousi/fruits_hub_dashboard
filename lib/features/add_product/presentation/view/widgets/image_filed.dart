@@ -75,7 +75,7 @@ visible: fileImage != null,
   Future<XFile?> imagePicker() async {
     final ImagePicker picker = ImagePicker();
     final XFile? image = await picker.pickImage(source: ImageSource.gallery);
-    widget.onFileChanged(File(image!.path));
+    widget.onFileChanged(File(image?.path  ?? ''));
     return image;
   }
 }
