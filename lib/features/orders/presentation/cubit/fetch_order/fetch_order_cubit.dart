@@ -11,14 +11,7 @@ class FetchOrderCubit extends Cubit<FetchOrderState> {
 
   Future<void> fetchOrders() async {
     emit(FetchOrderLoading());
-    final result = await ordersRepo.fetchOrders();
-    result.fold(
-      (error) => emit(
-        FetchOrderFailure(message: error.message),
-      ),
-      (success) => emit(
-        FetchOrderSuccess(orders: success),
-      ),
-    );
+    ordersRepo.fetchOrders();
+   
   }
 }
