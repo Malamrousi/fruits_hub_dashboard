@@ -1,0 +1,4 @@
+class Constant {
+  static const String supBaseKey =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx0d3luemp1cmR0ZWpvdGlpY2Z3Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMzc2OTY1MywiZXhwIjoyMDQ5MzQ1NjUzfQ.Z8Z8a70zI8ZJM_wNOA_xfO0Lj6hIVsvJudEN-Oo6mlQ";
+}
