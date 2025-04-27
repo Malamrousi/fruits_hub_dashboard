@@ -7,7 +7,7 @@ import 'package:furit_hub_dashbboard/features/add_product/data/models/add_produc
 import 'package:furit_hub_dashbboard/features/add_product/domain/entities/add_product_entity.dart';
 
 class ProductRepoImpl implements ProductRepo {
-  final DataBaseServices dataBaseServices;
+  final DatabaseService dataBaseServices;
 
   ProductRepoImpl({required this.dataBaseServices});
   @override

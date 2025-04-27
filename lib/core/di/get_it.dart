@@ -18,7 +18,7 @@ void setUpLocator() {
 //StorageServices
   getIt.registerSingleton<StorageServices>(getIt.get<FirebaseStorageServices>());
 //DataBaseServices
-  getIt.registerSingleton<DataBaseServices>(FireStoreServices());
+  getIt.registerSingleton<DatabaseService>(FireStoreService());
 //ImageRepo
   getIt.registerSingleton<ImageRepo>(ImagesRepoImpl(
     storageServices: getIt.get<StorageServices>(),
@@ -28,7 +28,7 @@ void setUpLocator() {
   );
 //ProductRepo
   getIt.registerSingleton<ProductRepo>(ProductRepoImpl(
-    dataBaseServices: getIt.get<DataBaseServices>(),
+    dataBaseServices: getIt.get<DatabaseService>(),
   ));
 //AddProductCubit
   getIt.registerSingleton<AddProductCubit>(AddProductCubit(
