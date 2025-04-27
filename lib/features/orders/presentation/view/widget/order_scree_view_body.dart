@@ -16,7 +16,7 @@ class OrderScreeViewBody extends StatelessWidget {
           const FilterSection(),
           verticalSpacing(16),
           Expanded(
-              child: OrdersItemsListView(orderModels: [
+              child: OrdersItemsListView(orderEntity: [
             getDummyOrder(),
             getDummyOrder(),
             getDummyOrder(),
